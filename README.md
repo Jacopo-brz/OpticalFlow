@@ -7,4 +7,5 @@ On the top left of the canvas you should see the optical flow (rendered as lines
 
 #ISSUES
 - Unknown exception thrown by the optical flow function
+- Weak visualization (lines are re-drawn at each cycle)
 - Not robust to glitches, probably given by light conditions between two consecutive frames
