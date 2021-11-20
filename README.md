@@ -1,5 +1,5 @@
 # OpticalFlow
-Implementation of the optical flow algorithm in openFrameworks using OpenCV. In order to run correctly the program you have to:
+Implementation of Farneback's optical flow algorithm in openFrameworks using OpenCV. In order to run correctly the program you have to:
 - Create an openFrameworks project using projectGenerator, using ofxCv and ofxOpenCv addons
 - Substitute the src folder content with this repo content
 - Compile and... RRRRRRRRRRRUN!
