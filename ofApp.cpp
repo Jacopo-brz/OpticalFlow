@@ -52,7 +52,7 @@ void ofApp::update(){
 
 	vidGrabber.update();
 	bNewFrame = vidGrabber.isFrameNew();
-	//std::cout << "is the frame new? " << bNewFrame << std::endl; //Yes, since (at least in this version) the videoGrabber is capable to acquire a new frame in a single update-draw cycle
+	//std::cout << "is the frame new? " << bNewFrame << std::endl; //Yes, since (at least in this version) the videoGrabber is able to acquire a new frame in a single update-draw cycle
 	
 	if (bNewFrame) 
 	{
@@ -72,7 +72,7 @@ void ofApp::update(){
 		cv::split(flow, flowPlanes); //splits an n-channel image into n (single channel) arrays
 		//conversion to IplImage format (why?)
 		iplX = new IplImage (flowPlanes[0]);
-		flowX = iplX; //check if it is kille
+		flowX = iplX; 
 		iplY = new IplImage(flowPlanes[1]);
 		flowY = iplY;
 	}
@@ -81,7 +81,6 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	//ofBackground(100);
 	ofSetColor(255, 255, 255);
 	ofPushMatrix();
 	ofTranslate(10, 5);
